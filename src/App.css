@@ -1,33 +1,52 @@
+@import "~antd/dist/antd.css";
+
 .App {
   text-align: center;
+  max-height: 100%
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App-header h1 {
+  color: whitesmoke;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 750px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-add-todo-input {
+  max-width: 300px;
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-add-todo-button {}
+
+.App-todos {
+  background-color: white;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App-todo {
+  /* position: relative; */
+}
+
+.App-todo-complete {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  left: 24px;
+}
+
+.App-todo-minus {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+
 }
